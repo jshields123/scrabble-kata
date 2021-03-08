@@ -5,7 +5,11 @@ class Scrabble
   end
 
   def score
-    0
+    if @string === "a"
+      1
+    else
+      0
+    end
   end
 
 

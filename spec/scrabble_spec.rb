@@ -17,6 +17,10 @@ describe Scrabble do
     expect(scrabble.score).to eq 0
   end
 
+  it 'returns 1 when given "a" 'do
+    scrabble = Scrabble.new("a")
+    expect(scrabble.score).to eq 1
+  end
 
 
 
@@ -46,6 +50,7 @@ end
 #
 # scrabble = Scrabble.new('a')
 # scrabble.score # => 1
+
 #
 # scrabble = Scrabble.new('f')
 # scrabble.score # => 4
