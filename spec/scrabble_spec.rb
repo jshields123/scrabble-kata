@@ -12,6 +12,10 @@ describe Scrabble do
     expect(scrabble.score).to eq 0
   end
 
+  it 'returns 0 when given nil value' do
+    scrabble = Scrabble.new(nil)
+    expect(scrabble.score).to eq 0
+  end
 
 
 
@@ -37,6 +41,8 @@ end
 
 # scrabble = Scrabble.new(nil)
 # scrabble.score # => 0
+
+
 #
 # scrabble = Scrabble.new('a')
 # scrabble.score # => 1
