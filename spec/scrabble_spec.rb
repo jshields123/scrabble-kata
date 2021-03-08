@@ -22,6 +22,11 @@ describe Scrabble do
     expect(scrabble.score).to eq 1
   end
 
+  it 'return 4 when given a "f" ' do
+    scrabble = Scrabble.new("f")
+    expect(scrabble.score).to eq 4
+  end
+
 
 
 end
